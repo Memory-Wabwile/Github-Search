@@ -11,7 +11,8 @@ export class HttpServiceService {
 
   constructor(private http:HttpClient) { }
 
-  getData():Observable<any>
+  //getProfile
+  getData(searchQuery:any):Observable<any>
 {
 
   const url = ""

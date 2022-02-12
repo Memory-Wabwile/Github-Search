@@ -16,7 +16,7 @@ export class UserProfileComponent implements OnInit {
   ngOnInit(): void {
 
     getUsers();{
-      this.httpService.getData().subscribe((data) => {
+      this.httpService.getData(searchQuery).subscribe((data) => {
         
       })
     }
@@ -24,6 +24,10 @@ export class UserProfileComponent implements OnInit {
 
 }
 function getUsers() {
+  throw new Error('Function not implemented.');
+}
+
+function searchQuery(searchQuery: any) {
   throw new Error('Function not implemented.');
 }
 
