@@ -1,14 +1,14 @@
-
 <!-- <div class="searches"> -->
 <div class="search">
-    <form action="" (submit)="searchUser()">
+  <form action="" (submit)="searchUser()">
     <h4>Search for user</h4>
-    <input [(ngModel)] = "githubUserQuery" type="search" name="user"  placeholder="Enter github username"><span><button type="submit">Search</button></span>
-</form>
+    <input [(ngModel)]="githubUserQuery" type="search" name="user" placeholder="Enter github username"><span><button
+        type="submit">Search</button></span>
+  </form>
 </div>
 
 <div>
-    <app-user-profile [githubData]="githubData"></app-user-profile>
+  <app-user-profile [githubData]="githubData"></app-user-profile>
 </div>
 
 <!-- <div class="search">
@@ -16,4 +16,3 @@
     <input type="text" placeholder="Search for a repository"><span><button type="search">Search</button></span>
 </div> -->
 <!-- </div> -->
-
