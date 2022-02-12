@@ -1,3 +1,3 @@
 export class User {
-//    users:string[];
+   users:string[] | any;
 }

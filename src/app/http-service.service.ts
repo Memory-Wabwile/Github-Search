@@ -11,6 +11,9 @@ export class HttpServiceService {
 
   getData():Observable<any>
 {
-  return this.http.get<any>(URL)
+
+  const url = ""
+  
+  return this.http.get<any>(url)
 }
 }
