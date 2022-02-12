@@ -6,10 +6,10 @@
 .search input{
     padding: 10px 15px;
     font-size: 1em;
-    width: fit-content;
+    width: 30%;
 }
 .searches{
-    display: flex;
+    /* display: flex; */
     text-align: center;
    justify-content: space-evenly;
 }

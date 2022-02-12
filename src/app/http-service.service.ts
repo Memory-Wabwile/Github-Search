@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, observable } from 'rxjs';
+import { Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HttpServiceService {
+
+  users:string[] | any;
 
   constructor(private http:HttpClient) { }
 
@@ -13,7 +15,7 @@ export class HttpServiceService {
 {
 
   const url = ""
-  
+
   return this.http.get<any>(url)
 }
 }
