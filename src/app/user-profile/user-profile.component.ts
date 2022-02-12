@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../user';
 // import { HttpServiceService } from '../http-service.service';
 
@@ -9,25 +9,16 @@ import { User } from '../user';
 })
 export class UserProfileComponent implements OnInit {
 
-  // users:string[] | any;
 
-  // constructor(private httpService:HttpServiceService) { }
+  @Input() githubData:any;
+  
+ constructor(){}
 
   ngOnInit(): void {
 
-    // getUsers();{
-    //   this.httpService.getData(searchQuery).subscribe((data) => {
-        
-    //   })
-//     }
+
   }
 
-// }
-// function getUsers() {
-//   throw new Error('Function not implemented.');
-// }
 
-// function searchQuery(searchQuery: any) {
-//   throw new Error('Function not implemented.');
 }
 
