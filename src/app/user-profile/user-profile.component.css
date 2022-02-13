@@ -1,3 +1,7 @@
 img{
     border-radius: 50%;
 }
+.first{
+   display: flex; 
+  font-size: 2em;
+}

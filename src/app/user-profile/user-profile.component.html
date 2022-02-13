@@ -1,6 +1,16 @@
 <div class="container">
-  <img [src]="githubData.avatar_url" alt="" height="300">
-  <div>
-    
+  <div class="first">
+    <div>
+      <!-- //property binding on src -->
+      <img [src]="githubData.avatar_url" alt="" height="300">
+    </div>
+    <div>
+      <p> <strong> User Name : </strong>{{githubData.login}}</p>
+      <p> <strong> Total Repos : </strong>{{githubData.public_repos}}</p>
+      <p><strong>Followers : </strong>{{githubData.followers}}</p>
+      <p><strong>Following : </strong>{{githubData.following}}</p>
+      <p><strong>Total Gists : </strong>{{githubData.public_gists}}</p>
+      <p>This github account was created on : <strong>{{githubData.created_at | date}}</strong></p>
+    </div>
   </div>
 </div>
