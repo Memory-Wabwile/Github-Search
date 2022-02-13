@@ -1,6 +1,6 @@
 <div class="container">
   <div class="first">
-    <div>
+    <div class="profile">
       <!-- //property binding on src -->
       <img [src]="githubData.avatar_url" alt="" height="300">
     </div>
@@ -10,6 +10,7 @@
       <p><strong>Followers : </strong>{{githubData.followers}}</p>
       <p><strong>Following : </strong>{{githubData.following}}</p>
       <p><strong>Total Gists : </strong>{{githubData.public_gists}}</p>
+      <p><strong>Github Profile : </strong><a [href]="githubData.html_url" target="_blank">{{githubData.html_url}}</a></p>
       <p>This github account was created on : <strong>{{githubData.created_at | date}}</strong></p>
     </div>
   </div>

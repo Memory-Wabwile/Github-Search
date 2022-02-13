@@ -4,4 +4,9 @@ img{
 .first{
    display: flex; 
   font-size: 2em;
+  margin-top: 9%;
+}
+.profile{
+    padding-top: 5%;
+    margin-right: 10%;
 }
