@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { GithubReposComponent } from './github-repos/github-repos.component';
+import { DatePipe } from './date.pipe';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { GithubReposComponent } from './github-repos/github-repos.component';
     HeaderComponent,
     SearchComponent,
     UserProfileComponent,
-    GithubReposComponent
+    GithubReposComponent,
+    DatePipe,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

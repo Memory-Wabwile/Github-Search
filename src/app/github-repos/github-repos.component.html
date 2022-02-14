@@ -6,19 +6,30 @@
           type="submit">Search</button></span>
     </form> -->
 
-    <div *ngFor="let repo of githubRepos" class="repo">
-      <div class="card">
-        <div class="card-header">
-          <h2>{{repo.name}}</h2>
+
+
+    <div class="row">
+      <div *ngFor="let repo of githubRepos" class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h2>{{repo.name}}</h2>
+          </div>
+          <div class="card-body">
+            <p>{{repo.full_name}}</p>
+            <p>{{repo.description}}</p>
+            <p>{{repo.created_at | date}}</p>
+            <p>{{repo.html_url}}</p>
+          </div>
+
         </div>
-        <div class="card-body">
-          <p>{{repo.full_name}}</p>
-          <p>{{repo.description}}</p>
-          <p>{{repo.created_at | date}}</p>
-          <p>{{repo.html_url}}</p>
-        </div>
+
       </div>
     </div>
+
+    <!-- <div *ngFor="let repo of githubRepos" class="repo"> -->
+
+
+
 
 
 
