@@ -11,6 +11,7 @@ export class UserProfileComponent implements OnInit {
 
 
   @Input() githubData:any;
+  
 
  constructor(){ }
 

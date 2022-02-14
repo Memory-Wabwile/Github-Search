@@ -25,9 +25,9 @@ public githubData:any;
       });
 
       //fetching github repos
-      this.httpService.getRepos(this.githubUserQuery).subscribe((data) => {
-        this.githubRepos = data;
-      });
+      // this.httpService.getRepos(this.githubUserQuery).subscribe((data) => {
+      //   this.githubRepos = data;
+      // });
   }
 
   ngOnInit(): void {
