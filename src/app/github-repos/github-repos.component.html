@@ -1,7 +1,13 @@
-<div class="search">
-    <form action="" (submit)="searchUser()">
-      <h4>Search for user</h4>
-      <input [(ngModel)]="githubUserQuery" type="search" name="user" placeholder="Enter github username"><span><button
+<div class="jumbotron">
+    <form action="" (submit)="searchRepos()">
+      <h4>Search for Repos</h4>
+      <input [(ngModel)]="githubUserQuery" type="search" name="repos" placeholder="Enter Repo name"><span><button
           type="submit">Search</button></span>
     </form>
+
+    <div class="display">
+        <p *ngFor="let repo of githubRepos" class="card">{{repo.name}}</p>
+
+        
+    </div>
   </div>
