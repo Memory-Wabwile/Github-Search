@@ -1,4 +1,4 @@
-<div  class="container">
+<div *ngIf="githubData" class="container">
   <div class="first">
     <div class="profile">
       <!-- //property binding on src -->
@@ -23,6 +23,7 @@
           <p>{{repo.description}}</p>
         </div>
       </div>
+      
     </div> -->
      <app-github-repos [githubRepos]="githubRepos" ></app-github-repos>
   </div>

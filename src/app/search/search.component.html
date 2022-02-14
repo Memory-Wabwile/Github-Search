@@ -1,5 +1,5 @@
 <!-- <div class="searches"> -->
-<div class="search">
+<div  class="search">
   <form action="" (submit)="searchUser()">
     <h4>Search for user</h4>
     <input [(ngModel)]="githubUserQuery" type="search" name="user" placeholder="Enter github username"><span><button
@@ -10,6 +10,11 @@
 
 <div>
   <app-user-profile [githubData]="githubData"></app-user-profile>
+  <app-github-repos [githubRepos]="githubRepos"></app-github-repos>
+</div>
+
+<div>
+
 </div>
 
 <!-- <div class="search">

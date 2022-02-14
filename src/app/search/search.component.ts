@@ -25,10 +25,10 @@ public githubData:any;
         this.githubData = data;
       });
 
-      //fetching github repos
-      // this.httpService.getRepos(this.githubUserQuery).subscribe((data) => {
-      //   this.githubRepos = data;
-      // });
+     // fetching github repos
+      this.httpService.getRepos(this.githubUserQuery).subscribe((data) => {
+        this.githubRepos = data;
+      });
   }
 
   ngOnInit(): void {

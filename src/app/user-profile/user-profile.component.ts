@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { HttpServiceService } from '../http-service.service';
+import { Repos } from '../repos';
 import { User } from '../user';
 // import { HttpServiceService } from '../http-service.service';
 
@@ -12,14 +14,20 @@ export class UserProfileComponent implements OnInit {
 
   @Input() githubData:any;
   @Input()
-  // githubRepos: any[] = [];
   githubRepos: any[] = [];
+  // githubRepos: any[] = [];
   // @Input () repos :any;
-  // repos:Repos |any[];
-  
+  // @Input () repos :any;
+  // repos!: Repos | any[]; 
 
- constructor(){ }
+ constructor(private httpService:HttpServiceService){ }
 
+
+   //fetching github repos
+      // this.httpService.getRepos(this.githubUserQuery).subscribe((data) => {
+      //   this.githubRepos = data;
+      // });
+    
   ngOnInit(): void {
 
 

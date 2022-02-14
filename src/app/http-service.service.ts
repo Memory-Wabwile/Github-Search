@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable} from 'rxjs';
+import { Observable, retry} from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Repos } from './repos';
 
@@ -10,7 +10,7 @@ import { Repos } from './repos';
 export class HttpServiceService {
 
   users:string[] | any;
-  repos:Repos |any;
+  // repos:Repos |any;
 
   constructor(private http:HttpClient) { }
 
@@ -21,14 +21,20 @@ export class HttpServiceService {
   let url = `https://api.github.com/users/${searchQuery}?token=${environment } `
 
   return this.http.get<any>(url)
+
+ 
 }
+
 
 // get repos using a promise
 public  getRepos(searchQuery:any):Observable<any[]>
 {
 
-  let url = `https://api.github.com/users/${searchQuery}/repos?token=${environment } `
+  let repoUrl = `https://api.github.com/users/${searchQuery}/repos?token=${environment } `
 
-  return this.http.get<any[]>(url)
+  return this.http.get<any[]>(repoUrl)
 }
+
 }
+
+
