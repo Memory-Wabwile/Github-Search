@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable} from 'rxjs';
 import { environment } from 'src/environments/environment';
-
+import { Repos } from './repos';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 export class HttpServiceService {
 
   users:string[] | any;
-  
+  repos:Repos |any;
 
   constructor(private http:HttpClient) { }
 
@@ -23,19 +23,12 @@ export class HttpServiceService {
   return this.http.get<any>(url)
 }
 
-
-}
-
 // get repos using a promise
-// public  getRepos(searchQuery:any):Observable<any[]>
-// {
+public  getRepos(searchQuery:any):Observable<any[]>
+{
 
-//   let url = `https://api.github.com/users/${searchQuery}/repos?token=${environment } `
+  let url = `https://api.github.com/users/${searchQuery}/repos?token=${environment } `
 
-//   return this.http.get<any[]>(url)
-// }
-
-// function fetchRepos() {
-//   throw new Error('Function not implemented.');
-// }
-
+  return this.http.get<any[]>(url)
+}
+}

@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { GithubReposComponent } from './github-repos/github-repos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SearchComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    GithubReposComponent
   ],
   imports: [
     BrowserModule,
