@@ -33,6 +33,7 @@ public githubData:any;
   }
 
   ngOnInit(): void {
+
   }
 
 }

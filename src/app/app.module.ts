@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { GithubReposComponent } from './github-repos/github-repos.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -19,6 +20,7 @@ import { GithubReposComponent } from './github-repos/github-repos.component';
     SearchComponent,
     UserProfileComponent,
     GithubReposComponent,
+    HomeComponent,
   
    
   ],
