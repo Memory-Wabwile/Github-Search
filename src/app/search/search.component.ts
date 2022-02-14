@@ -13,6 +13,7 @@ public githubData:any;
   public githubRepos!: any[];
 
   users:string[] | any;
+  
 
   constructor(private httpService:HttpServiceService) { }
 

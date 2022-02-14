@@ -11,6 +11,11 @@ export class UserProfileComponent implements OnInit {
 
 
   @Input() githubData:any;
+  @Input()
+  // githubRepos: any[] = [];
+  githubRepos: any[] = [];
+  // @Input () repos :any;
+  // repos:Repos |any[];
   
 
  constructor(){ }

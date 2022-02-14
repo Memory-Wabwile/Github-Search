@@ -5,8 +5,16 @@
           type="submit">Search</button></span>
     </form>
 
-    <div class="display">
-        <p *ngFor="let repo of githubRepos" class="card">{{repo.name}}</p>
+    <div *ngFor = "let repo of githubRepos" class="repo">
+        <div  class="card">
+          <div class="card-header">
+            <h2 >{{repo.name}}</h2>
+          </div>
+          <div class="card-body">
+            <p>{{repo.description}}</p>
+          </div>
+        </div>
+      </div>
 
         
     </div>

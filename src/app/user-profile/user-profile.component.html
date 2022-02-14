@@ -14,8 +14,16 @@
       <p>This github account was created on : <strong>{{githubData.created_at | date}}</strong></p>
     </div>
 
-    <div class="repo">
-      
-    </div>
+    <!-- <div *ngFor = "let repo of githubRepos" class="repo">
+      <div  class="card">
+        <div class="card-header">
+          <h2 >{{repo.name}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{repo.description}}</p>
+        </div>
+      </div>
+    </div> -->
+     <app-github-repos [githubRepos]="githubRepos" ></app-github-repos>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { HttpServiceService } from '../http-service.service';
 
 @Component({
@@ -10,7 +10,11 @@ export class GithubReposComponent implements OnInit {
 
 
   public githubUserQuery:string | any;
-  public githubRepos!: any[];
+  // public githubRepos!: any[];
+  @Input()
+  githubRepos: any[] = [];
+
+  // githubRepos: any[] = [];
 
   constructor(private httpService:HttpServiceService) { }
 
