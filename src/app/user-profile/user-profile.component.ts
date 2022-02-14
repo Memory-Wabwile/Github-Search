@@ -13,21 +13,16 @@ export class UserProfileComponent implements OnInit {
 
 
   @Input() githubData:any;
-  @Input()
-  githubRepos: any[] = [];
+  @Input() githubRepos: any[] = [];
   // githubRepos: any[] = [];
   // @Input () repos :any;
   // @Input () repos :any;
-  // repos!: Repos | any[]; 
+  repos!: Repos | any[]; 
 
- constructor(private httpService:HttpServiceService){ }
+ constructor(){ }
 
 
-   //fetching github repos
-      // this.httpService.getRepos(this.githubUserQuery).subscribe((data) => {
-      //   this.githubRepos = data;
-      // });
-    
+ 
   ngOnInit(): void {
 
 
