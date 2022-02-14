@@ -7,11 +7,11 @@ Memory Wabwile<br>
  https://github.com/Memory-Wabwile
 
 ## Description
-My Quotes App is an application that allows users to read the quotes on the browser, to upvote and downvote on the quotes, to add their own quotes and also to delete quotes.
+Github search is an app that displays my github information and you can also search for other github users and see their information and repositories
 
 ## Live Page 
 
-
+https://memory-wabwile.github.io/Github-Search/home
 
 
 ## Technologies Used
