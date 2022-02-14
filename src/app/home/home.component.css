@@ -1,10 +1,18 @@
 .card{
-    width: 50%;
+    width: 70%;
      border: 2px solid maroon;
     box-shadow: 5px 5px 5px maroon;
+    margin: 2%;
+    font-size: 1.5em;
+    margin-left: 16%;
+}
+.card:hover{
+    color: white;
+    background-color: rgb(167, 66, 66);
 }
 .row{
     width: 100%;
+    display: flex;
 }
 img{
     border-radius: 50%;

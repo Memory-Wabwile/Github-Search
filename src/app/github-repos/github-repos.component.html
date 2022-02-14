@@ -18,7 +18,7 @@
             <p>{{repo.full_name}}</p>
             <p>{{repo.description}}</p>
             <p>{{repo.created_at | date}}</p>
-            <p>{{repo.html_url}}</p>
+            <p><a [href]="repo.html_url" target="_blank">{{repo.html_url}}</a></p>
           </div>
 
         </div>

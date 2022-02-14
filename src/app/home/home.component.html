@@ -1,30 +1,33 @@
-<div class="first">
-  <div class="profile">
-    <!-- //property binding on src -->
-    <img [src]="fetchData.avatar_url" alt="" height="300">
+<div class="container">
+  <div class="first">
+    <div class="profile">
+      <!-- //property binding on src -->
+      <img [src]="fetchData.avatar_url" alt="" height="300">
+    </div>
+    <div>
+      <p> <strong> User Name : </strong>{{fetchData.login}}</p>
+      <p> <strong> Total Repos : </strong>{{fetchData.public_repos}}</p>
+      <p><strong>Followers : </strong>{{fetchData.followers}}</p>
+      <p><strong>Following : </strong>{{fetchData.following}}</p>
+      <p><strong>Total Gists : </strong>{{fetchData.public_gists}}</p>
+      <p><strong>Github Profile : </strong><a [href]="fetchData.html_url" target="_blank">{{fetchData.html_url}}</a></p>
+      <p>This github account was created on : <strong>{{fetchData.created_at | date}}</strong></p>
+    </div>
   </div>
-  <div>
-    <p> <strong> User Name : </strong>{{fetchData.login}}</p>
-    <p> <strong> Total Repos : </strong>{{fetchData.public_repos}}</p>
-    <p><strong>Followers : </strong>{{fetchData.followers}}</p>
-    <p><strong>Following : </strong>{{fetchData.following}}</p>
-    <p><strong>Total Gists : </strong>{{fetchData.public_gists}}</p>
-    <p><strong>Github Profile : </strong><a [href]="fetchData.html_url" target="_blank">{{fetchData.html_url}}</a></p>
-    <p>This github account was created on : <strong>{{fetchData.created_at | date}}</strong></p>
-  </div>
-</div>
 
-<div class="row">
-  <div *ngFor="let repo of fetchRepos" class="d-flex col-md-12">
-    <div class="card">
-      <div class="card-header">
-        <h2>{{repo.name}}</h2>
-      </div>
-      <div class="card-body">
-        <p>{{repo.full_name}}</p>
-        <p>{{repo.description}}</p>
-        <p>{{repo.created_at | date}}</p>
-        <p>{{repo.html_url}}</p>
+  <div class="row">
+    <div *ngFor="let repo of fetchRepos" class="d-flex col-md-12">
+      <div class="card d-flex">
+        <div class="card-header">
+          <h2>{{repo.name}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{repo.full_name}}</p>
+          <p>{{repo.description}}</p>
+          <p>{{repo.created_at | date}}</p>
+          <p><a [href]="repo.html_url" target="_blank">{{repo.html_url}}</a></p>
+        </div>
+
       </div>
 
     </div>

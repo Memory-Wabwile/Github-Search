@@ -10,6 +10,7 @@ import { SearchComponent } from './search/search.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { GithubReposComponent } from './github-repos/github-repos.component';
 import { HomeComponent } from './home/home.component';
+import { DatePipe } from './date.pipe';
 
 
 
@@ -21,6 +22,7 @@ import { HomeComponent } from './home/home.component';
     UserProfileComponent,
     GithubReposComponent,
     HomeComponent,
+    DatePipe,
   
    
   ],
