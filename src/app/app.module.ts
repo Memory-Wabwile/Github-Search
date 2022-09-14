@@ -11,6 +11,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { GithubReposComponent } from './github-repos/github-repos.component';
 import { HomeComponent } from './home/home.component';
 import { DatePipe } from './date.pipe';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -30,7 +31,8 @@ import { DatePipe } from './date.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
 
   providers: [],

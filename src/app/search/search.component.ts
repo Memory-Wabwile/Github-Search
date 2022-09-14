@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpServiceService } from '../http-service.service';
+import{faGithub} from '@fortawesome/free-brands-svg-icons';
+
 
 
 @Component({
@@ -8,6 +10,8 @@ import { HttpServiceService } from '../http-service.service';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+
+faGithub = faGithub ; 
 
 public githubUserQuery:string | any;
 public githubData:any;
@@ -30,6 +34,8 @@ public githubData:any;
       this.httpService.getRepos(this.githubUserQuery).subscribe((data) => {
         this.githubRepos = data;
       });
+
+      
   }
 
   ngOnInit(): void {

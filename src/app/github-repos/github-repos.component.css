@@ -1,15 +1,35 @@
 .card{
-    width: 70%;
-     border: 2px solid maroon;
-    box-shadow: 5px 5px 5px maroon;
+    margin-bottom: 4%;
     font-size: 1.5em;
-    margin: 2%;
-    margin-left: 16%;
-}
-.card:hover{
+    background-color: rgba(33, 36, 41, 255);
     color: white;
-    background-color: rgb(167, 66, 66);
 }
+
 .row{
     width: 100%;
 }
+.card-header{
+    color: fuchsia;
+}
+form h4{
+    color: white;
+}
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%; 
+}
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid fuchsia;
+    margin-top: 3%;
+  }
+  

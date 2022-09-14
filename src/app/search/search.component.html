@@ -1,5 +1,5 @@
 <!-- <div class="searches"> -->
-<div  class="search">
+<!-- <div class="search">
   <form action="" (submit)="searchUser()">
     <h4>Search for user</h4>
     <input [(ngModel)]="githubUserQuery" type="search" name="user" placeholder="Enter github username"><span><button
@@ -15,10 +15,71 @@
 
 <div>
 
-</div>
+</div> -->
 
 <!-- <div class="search">
     <h4>Search for repository</h4>
     <input type="text" placeholder="Search for a repository"><span><button type="search">Search</button></span>
 </div> -->
 <!-- </div> -->
+
+<div class="container">
+
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="text">
+          <div class="titles">
+            <h1>Search</h1>
+            <h1>Github</h1>
+
+          </div>
+          <form action="" (submit)="searchUser()">
+            <h4>Search for user</h4>
+            <div class="input">
+              <input [(ngModel)]="githubUserQuery" type="search" name="user" placeholder="  Github username">
+            </div>
+            <div class="d-flex justify-content-center mt-3 mb-4">
+              <button type="submit">Search</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="image">
+          <div class="logo">
+
+            <fa-icon [icon]="faGithub"></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div>
+    <app-user-profile [githubData]="githubData"></app-user-profile>
+    <div class="row">
+      <div *ngFor="let repo of githubRepos" class="d-flex col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h2>{{repo.name}}</h2>
+          </div>
+          <div class="card-body">
+            <p>{{repo.full_name}}</p>
+            <p>{{repo.description}}</p>
+            <p>{{repo.created_at|date}}</p>
+            <p><a [href]="repo.html_url" target="_blank">{{repo.html_url}}</a></p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

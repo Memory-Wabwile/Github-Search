@@ -1,26 +1,87 @@
-.search{
-    font-size: 2em;
-    text-align: center;
-    margin-top: 1%;
+.search {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1%;
 }
-.search input{
-    padding: 10px 15px;
-    font-size: 1em;
-    width: 30%;
+.search input {
+  padding: 10px 15px;
+  font-size: 1em;
+  width: 30%;
 }
-.searches{
-    /* display: flex; */
-    text-align: center;
-   justify-content: space-evenly;
+.searches {
+  /* display: flex; */
+  text-align: center;
+  justify-content: space-evenly;
 }
-button{
-    padding: 10px 15px;
-    font-size: 1em;
-    background-color: rgb(22, 21, 21);
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 2px solid fuchsia;
+  
+}
+
+.wrapper {
+  /* border: 5px solid fuchsia; */
+  border-radius: 25px;
+  background-color: rgba(33, 36, 41, 255);
+  /* height: 50vh; */
+   margin-top: 5%;
+}
+.text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+.logo {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 140px;
+  color: fuchsia;
+  margin-top: 20%;
+}
+.titles{
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 3%;
+}
+.image{
+  border-left: 6px solid fuchsia;
+  height: 300px;
+}
+
+.card{
+    margin-bottom: 4%;
+    font-size: 1.5em;
+    background-color: rgba(33, 36, 41, 255);
     color: white;
-    cursor: pointer;
 }
-button:hover{
-    background-color: rgba(230, 212, 212, 0.911);
-    color:rgb(22, 21, 21) ;
+
+.row{
+    width: 100%;
 }
+.card-header{
+    color: fuchsia;
+}
+form h4{
+    color: white;
+}
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+  
